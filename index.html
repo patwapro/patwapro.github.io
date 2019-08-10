@@ -1,1 +1,274 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Amar Patwa | Software-Engineer</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css" rel='stylesheet'></link>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <style>
+      .main-section {
+        padding: 10rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 45px;
+      }
+      .sub-title {
+        font-weight: 700;
+        color: #fff;
+      }
+      .navbar-brand {
+        font-size: 1.65rem;
+        font-weight: 700;
+      }
+      .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .bg-dark {
+        background-color: #000 !important;
+      }
+      .title-2 {
+        font-weight: 700;
+        font-size: 35px;
+        padding: 0 0 30px;
+      }
+      a {
+        text-decoration: none !important;
+      }
+      .section-1 {
+        padding: 30px 0 50px;
+      }
+      .card {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        border: none;
+      }
+      .lead {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+      .footer {
+        padding: 2.5rem 0;
+        color: #999;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-top: 0.05rem solid #e5e5e5;
+      }
+      @media (min-width: 768px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+          padding-right: 2.5rem;
+          padding-left: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#home">AmarPatwa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div
+        id="home"
+        style="background-image: url('https://images.pexels.com/photos/90764/man-studio-portrait-light-90764.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');background-position: center;background-repeat: no-repeat;background-size: cover;height:580px"
+      >
+        <div class="main-section container">
+          <h1 class="text-white title">Hi, I am Amar Patwa</h1>
+          <h4 class="sub-title">Software Engineer</h4>
+        </div>
+      </div>
+      <div class="section-1 container" id="about">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h1 class="text-center title-2">About Me</h1>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <h2 class="text-center">I am versatile Frontend Developer</h2>
+            <p class="lead text-center">
+              I have 3+ year of experience in designing, <br />developing and
+              managing the complex site.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="section-1 container" id="work">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h1 class="text-center title-2">My Awesome Works</h1>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://dev.121recharge.com" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/121rech.PNG?raw=true"
+                  alt="121 Recharge"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">121 Recharge</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://erupaiya.in" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/erupaiya.PNG?raw=true"
+                  alt="121 Recharge"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Erupaiya</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://grammoney.in" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/gram.PNG?raw=true"
+                  alt="121 Recharge"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GramMoney</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row" style="padding-top:20px">
+          <div class="col-md-4 col-sm-6">
+            <a href="https://kiscosteel.com/" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/kisco.PNG?raw=true"
+                  alt="Kisco Steel"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kisco Steel</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://pay4services.com" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/pay.PNG?raw=true"
+                  alt="Pay4Services"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pay4Services</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://www.cybertelindia.in/" target="_blank">
+              <div class="card" style="width: 18rem;">
+                <img
+                  class="card-img-top"
+                  src="https://github.com/patwapro/demoimage/blob/master/cyber.PNG?raw=true"
+                  alt="Cybertel India"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cybertel India</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <div class="section-1 container" id="contact">
+        <div class="row text-center">
+          <div class="col-md-12 col-sm-12">
+            <h1 class="text-center title-2">Follow Me</h1>
+          </div>
+          <!-- <div class="col-md-3 col-sm-6">
+            <img
+              class="rounded-circle"
+              src="https://image.flaticon.com/icons/svg/145/145802.svg"
+              alt="Generic placeholder image"
+              width="100"
+              height="100"
+            />
+          </div> -->
+          <div class="col-md-4 col-sm-6">
+            <img
+              class="rounded-circle"
+              src="https://image.flaticon.com/icons/svg/25/25231.svg"
+              alt="Generic placeholder image"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <img
+              class="rounded-circle"
+              src="https://image.flaticon.com/icons/svg/179/179342.svg"
+              alt="Generic placeholder image"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <img
+              class="rounded-circle"
+              src="https://image.flaticon.com/icons/svg/179/179330.svg"
+              alt="Generic placeholder image"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /.container -->
+    <footer class="footer">
+      <!-- <h3>This is my demo portfolio.</h3> -->
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
