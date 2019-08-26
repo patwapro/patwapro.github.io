@@ -12,7 +12,7 @@
         padding: 10rem 1.5rem;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         flex-direction: column;
       }
       .title {
@@ -21,7 +21,7 @@
       }
       .sub-title {
         font-weight: 700;
-        color: #fff;
+        color: #484848;
       }
       .navbar-brand {
         font-size: 1.65rem;
@@ -31,8 +31,10 @@
         font-size: 18px;
         font-weight: 600;
       }
-      .bg-dark {
-        background-color: #000 !important;
+      .navbar {
+        background-color: #fff !important;
+        box-shadow: 0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+        justify-content: center;
       }
       .title-2 {
         font-weight: 700;
@@ -44,10 +46,32 @@
       }
       .section-1 {
         padding: 30px 0 50px;
+        border-top: 1px solid rgb(221, 221, 221);
       }
       .card {
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        box-shadow: rgba(3, 0, 73, 0.13) 0px 0px 3px !important;
         border: none;
+        padding:2rem;
+        margin-bottom: 1rem;
+        border-radius:1rem;
+      }
+      .job-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .company-name{
+        font-size: 1.2rem;
+        color: #484848;
+        font-weight: 600;
+      }
+      .location{
+        font-size: 1.2rem;
+        color: #484848;
+        padding-bottom: 0.5rem;
+      }
+      .rele-responsibility{
+        font-size: 1rem;
+        color: #484848;
       }
       .lead {
         font-size: 1.25rem;
@@ -60,6 +84,32 @@
         background-color: #f9f9f9;
         border-top: 0.05rem solid #e5e5e5;
       }
+      .skills-heading{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+      .skills-tile{
+        color: #484848;
+        margin-right: 0.5rem;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid rgb(233, 237, 243);
+        border-radius: 0.2rem;
+      }
+      .skills-name{
+        color: rgb(0, 0, 0);
+        opacity: 0.9;
+        font-size: 1rem;
+      }
+      .skills-year{
+        opacity: 0.75;
+        font-size: 0.9rem;
+      }
+      .skills-flex{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+      }
       @media (min-width: 768px) {
         .navbar-expand-md .navbar-nav .nav-link {
           padding-right: 2.5rem;
@@ -69,170 +119,289 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#home">AmarPatwa</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="javascript:;">
+        <img src="./logo" alt="logo" style="width:3rem"/>
+      </a>
     </nav>
 
     <main role="main">
       <div
         id="home"
-        style="background-image: url('https://images.pexels.com/photos/90764/man-studio-portrait-light-90764.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');background-position: center;background-repeat: no-repeat;background-size: cover;height:580px"
       >
         <div class="main-section container">
-          <h1 class="text-white title">Hi, I am Amar Patwa</h1>
+          <h1 class="title">Hi, I am Amar Patwa</h1>
           <h4 class="sub-title">Software Engineer</h4>
         </div>
       </div>
-      <div class="section-1 container" id="about">
+      <div class="section-1 container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <h1 class="text-center title-2">About Me</h1>
+            <h1 class="text-center title-2">Experience</h1>
           </div>
           <div class="col-md-12 col-sm-12">
-            <h2 class="text-center">I am versatile Frontend Developer</h2>
-            <p class="lead text-center">
-              I have 3+ year of experience in designing, <br />developing and
-              managing the complex site.
-            </p>
+            <div class="card">
+              <div class="job-title">
+                Software Engineer
+              </div>
+              <div class="company-name">
+                Vasitum <span style="padding:0rem 0.5rem;color:#ddd">|</span><span style="font-weight: 400">Dec 2018 to present</span>
+              </div>
+              <div class="location">
+                Noida
+              </div>
+              <div class="role-responsibility">
+                I am on the team that is responsible for creating all user interfaces, as a requirement of
+                product. I led the effort to build a feature that allows users to easily keep track of all
+                functionality we provided. My responsibilities included the initial research, planning
+                and managing the project, designing the feature.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="card">
+              <div class="job-title">
+                Frontend Developer
+              </div>
+              <div class="company-name">
+                Codegenie LLP <span style="padding:0rem 0.5rem;color:#ddd">|</span><span style="font-weight: 400">May 2017 - Dec 2018</span>
+              </div>
+              <div class="location">
+                New Delhi
+              </div>
+              <div class="role-responsibility">
+                I am on the team that is responsible for creating all user interfaces, as a requirement of
+                customer. I led the effort to build a feature that allows users to easily keep track of all
+                functionality we provided. My responsibilities included the initial research, planning
+                and managing the project, designing the feature.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="card">
+              <div class="job-title">
+                Web Developer
+              </div>
+              <div class="company-name">
+                LilySys Solutions <span style="padding:0rem 0.5rem;color:#ddd">|</span><span style="font-weight: 400">Sep 2016 – May 2017</span>
+              </div>
+              <div class="location">
+                New Delhi
+              </div>
+              <div class="role-responsibility">
+                Responsible for creating an internal dashboard, all the software based on PHP
+                technology( Codeigniter, Wordpress ).
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="section-1 container" id="work">
+
+      <div class="section-1 container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <h1 class="text-center title-2">My Awesome Works</h1>
+            <h1 class="text-center title-2">Skills</h1>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="http://dev.121recharge.com" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/121rech.PNG?raw=true"
-                  alt="121 Recharge"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">121 Recharge</h5>
+          <div class="col-md-12 col-sm-12">
+              <div class="skills-heading">
+                Markup and Stylesheet Language(s) & Framework(s):
+              </div>
+              <div class="skills-flex">
+                <div class="skills-tile">
+                  <span class="skills-name">HTML</span>
+                  <span>|</span>
+                  <span class="skills-year">3 Year(s)</span>
+                </div>
+                <div class="skills-tile">
+                  <span class="skills-name">CSS</span>
+                  <span>|</span>
+                  <span class="skills-year">3 Year(s)</span>
+                </div>
+                <div class="skills-tile">
+                  <span class="skills-name">Bootstrap</span>
+                  <span>|</span>
+                  <span class="skills-year">3 Years(s)</span>
+                </div>
+                <div class="skills-tile">
+                    <span class="skills-name">Symantics</span>
+                    <span>|</span>
+                    <span class="skills-year">1 Years(s)</span>
+                  </div>
+                <div class="skills-tile">
+                    <span class="skills-name">SASS</span>
+                    <span>|</span>
+                    <span class="skills-year">3 Years(s)</span>
+                  </div>
+              </div>
+            </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="skills-heading">
+              Server-Side Programming Language(s) & Framework(s):
+            </div>
+            <div class="skills-flex">
+              <div class="skills-tile">
+                <span class="skills-name">PHP</span>
+                <span>|</span>
+                <span class="skills-year">2 Year(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">NodeJs</span>
+                <span>|</span>
+                <span class="skills-year">1 Year(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">Python</span>
+                <span>|</span>
+                <span class="skills-year">3 Month(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">Codeigniter</span>
+                <span>|</span>
+                <span class="skills-year">2 Year(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">ExpressJs</span>
+                <span>|</span>
+                <span class="skills-year">1 Year(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">Django</span>
+                <span>|</span>
+                <span class="skills-year">3 Month(s)</span>
+              </div>
+              <div class="skills-tile">
+                <span class="skills-name">Flask</span>
+                <span>|</span>
+                <span class="skills-year">3 Month(s)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+              <div class="skills-heading">
+                Client-Side Programming Language(s) Framework(s):
+              </div>
+              <div class="skills-flex">
+                  <div class="skills-tile">
+                    <span class="skills-name">Javascipt</span>
+                    <span>|</span>
+                    <span class="skills-year">3 Year(s)</span>
+                  </div>
+                  <div class="skills-tile">
+                    <span class="skills-name">ReactJs</span>
+                    <span>|</span>
+                    <span class="skills-year">2 Year(s)</span>
+                  </div>
+                  <div class="skills-tile">
+                    <span class="skills-name">NextJs</span>
+                    <span>|</span>
+                    <span class="skills-year">1 Year(s)</span>
+                  </div>
+                  <div class="skills-tile">
+                    <span class="skills-name">Jquery</span>
+                    <span>|</span>
+                    <span class="skills-year">3 Year(s)</span>
+                  </div>
+                  <div class="skills-tile">
+                    <span class="skills-name">Ajax</span>
+                    <span>|</span>
+                    <span class="skills-year">3 Year(s)</span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="skills-heading">
+                  Database:
+                </div>
+                <div class="skills-flex">
+                    <div class="skills-tile">
+                      <span class="skills-name">MySql</span>
+                      <span>|</span>
+                      <span class="skills-year">3 Year(s)</span>
+                    </div>
+                    <div class="skills-tile">
+                      <span class="skills-name">Mongodb</span>
+                      <span>|</span>
+                      <span class="skills-year">3 Month(s)</span>
+                    </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="http://erupaiya.in" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/erupaiya.PNG?raw=true"
-                  alt="121 Recharge"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Erupaiya</h5>
+              <div class="col-md-12 col-sm-12">
+                  <div class="skills-heading">
+                    Api:
+                  </div>
+                  <div class="skills-flex">
+                      <div class="skills-tile">
+                        <span class="skills-name">Rest api</span>
+                        <span>|</span>
+                        <span class="skills-year">2 Year(s)</span>
+                      </div>
+                      <div class="skills-tile">
+                        <span class="skills-name">Graphql</span>
+                        <span>|</span>
+                        <span class="skills-year">Learning</span>
+                      </div>
+                  </div>
                 </div>
-              </div>
-            </a>
+                <div class="col-md-12 col-sm-12">
+                    <div class="skills-heading">
+                      Version Control & Repository Hosting Platform:
+                    </div>
+                    <div class="skills-flex">
+                        <div class="skills-tile">
+                          <span class="skills-name">Git</span>
+                          <span>|</span>
+                          <span class="skills-year">1 Year(s)</span>
+                        </div>
+                        <div class="skills-tile">
+                          <span class="skills-name">GitHub</span>
+                          <span>|</span>
+                          <span class="skills-year">1 Year(s)</span>
+                        </div>
+                        <div class="skills-tile">
+                          <span class="skills-name">GitLab</span>
+                          <span>|</span>
+                          <span class="skills-year">1 Year(s)</span>
+                        </div>
+                        <div class="skills-tile">
+                          <span class="skills-name">BitBucket</span>
+                          <span>|</span>
+                          <span class="skills-year">6 Month(s)</span>
+                        </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+
+      <div class="section-1 container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h1 class="text-center title-2">Qualifications</h1>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="http://grammoney.in" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/gram.PNG?raw=true"
-                  alt="121 Recharge"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">GramMoney</h5>
-                </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="card">
+              <div class="job-title">
+                B-Tech (Computer Scinces)
               </div>
-            </a>
+              <div class="company-name">
+                Vishveshwarya institute of engineering and technology
+                <span style="padding:0rem 0.5rem;color:#ddd">|</span><span style="font-weight: 400">2012 - 2016</span>
+              </div>
+              <div class="location">
+                Greater Noida phase-2, U.P
+              </div>
+              <div class="role-responsibility">
+                Aggregate 68.1%
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row" style="padding-top:20px">
-          <div class="col-md-4 col-sm-6">
-            <a href="https://kiscosteel.com/" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/kisco.PNG?raw=true"
-                  alt="Kisco Steel"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Kisco Steel</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="http://pay4services.com" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/pay.PNG?raw=true"
-                  alt="Pay4Services"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Pay4Services</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="http://www.cybertelindia.in/" target="_blank">
-              <div class="card" style="width: 18rem;">
-                <img
-                  class="card-img-top"
-                  src="https://github.com/patwapro/demoimage/blob/master/cyber.PNG?raw=true"
-                  alt="Cybertel India"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cybertel India</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div> -->
-      <div class="section-1 container" id="contact">
+      </div>
+      
+      <!-- <div class="section-1 container" id="contact">
         <div class="row text-center">
           <div class="col-md-12 col-sm-12">
             <h1 class="text-center title-2">Follow Me</h1>
           </div>
-          <!-- <div class="col-md-3 col-sm-6">
-            <img
-              class="rounded-circle"
-              src="https://image.flaticon.com/icons/svg/145/145802.svg"
-              alt="Generic placeholder image"
-              width="100"
-              height="100"
-            />
-          </div> -->
           <div class="col-md-4 col-sm-6">
             <img
               class="rounded-circle"
@@ -261,7 +430,9 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
+
+
     </main>
     <!-- /.container -->
     <footer class="footer">
